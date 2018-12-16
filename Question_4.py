@@ -82,20 +82,3 @@ for i in range(len(x)):
     plt.ylabel('Amplitude')
     plt.axis([0,500,0,max(abs(y[i]))]) #Enlarging each plot from 0 to 500Hz
     plt.savefig('Plot of Number %i.svg' %(i+1),format='svg') #Save plot as svg format
-    
-"""
-###############################################################################
-The following was Programmed by Samuel Chua
-###############################################################################
-def printing(num,x,y):
-    plt.figure(num)
-    plt.plot(x,abs(y))
-    plt.title('Number %i' % (num))
-    plt.xlabel('Frequency(Hz)')
-    plt.ylabel('Amplitude')
-    plt.axis([0,500,0,max(abs(y))])
-
-for i in range(11):
-   printing(i+1,x[i],y[i])
-###############################################################################
-"""
